@@ -1,0 +1,11 @@
+.vscode
+__pycache__
+_build/
+build/
+*.egg-info
+dist/
+
+logs/
+checkpoints/
+*.xlsx
+configs/antmaze-large-diverse-g/
