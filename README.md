@@ -4,9 +4,9 @@ Official code for "Goal-Conditioned On-Policy Reinforcement Learning" (NeurIPS 2
 
 ## code
 
-1. [code](https://github.com/GongXudong/GCPO/vvc) for velocity vector control of Fixed-wing UAVs.
-2. [code](https://github.com/GongXudong/GCPO/pointmaze) for PointMaze.
-3. [code](https://github.com/GongXudong/GCPO/reach) for Reach.
+1. [code](https://github.com/GongXudong/GCPO/tree/main/vvc) for velocity vector control of Fixed-wing UAVs.
+2. [code](https://github.com/GongXudong/GCPO/tree/main/pointmaze) for PointMaze.
+3. [code](https://github.com/GongXudong/GCPO/tree/main/reach) for Reach.
 
 ## Citation
 
