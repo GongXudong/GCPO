@@ -1,0 +1,10 @@
+logs/
+checkpoints/
+demonstrations/cache/
+demonstrations/data/
+
+f16trace.csv
+
+results/
+scripts/
+*process_log*.txt

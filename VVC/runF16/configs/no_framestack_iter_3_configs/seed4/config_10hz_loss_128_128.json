@@ -1,0 +1,49 @@
+{
+    "step_frequence": 10,
+    "rollout": {
+        "expert_data_dir": "10hz_10_5_5_iter_3_aug",
+        "v_range": [100, 300],
+        "v_interval": 10,
+        "mu_range": [-85, 85],
+        "mu_interval": 5,
+        "chi_range": [-180, 175],
+        "chi_interval": 5,
+        "rollout_pool_size": 30
+    },
+    "env": {
+        "max_simulate_time": 40,
+        "reward_scalar_b": 0.5
+    },
+    "bc": {
+        "experiment_name": "iter3/10hz_128_128_300epochs_loss_4",
+        "policy_file_save_name": "bc_checkpoint",
+        "policy_after_value_head_trained_file_save_name": "bc_checkpoint_after_value_head_trained",
+        "data_cache_dir": "cache/iter3",
+        "seed": 31,
+        "train_epochs": 300,
+        "batch_size": 4096,
+        "l2_weight": 1e-4,
+        "ent_weight": 1e-2,
+        "use_loss_callback": true,
+        "prob_true_act_threshold": 10000.0,
+        "loss_threshold": -8.0
+    },
+    "rl_bc": {
+        "experiment_name": "iter3/10hz_128_128_2e8steps_loss_4",
+        "seed": 34,
+        "seed_for_load_algo": 37,
+        "net_arch": [128, 128],
+        "batch_size": 4096,
+        "gamma": 0.995,
+        "activate_value_head_train_steps": 2e7,
+        "train_steps": 2e8,
+        "rollout_process_num": 72,
+        "kl_with_bc_model_coef": 1e-3
+    },
+    "rl": {
+        "experiment_name": "iter3/10hz_128_128_2e8steps_loss_4_singleRL",
+        "seed": 39,
+        "rollout_process_num": 72,
+        "train_steps": 2e8
+    }
+}
